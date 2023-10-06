@@ -3,13 +3,14 @@ Gaussian decomposition code from apphotcyg.py cleaned up for 1st year students.
 This one has an additional 7-component Gaussian function for N48.
 
 I was not familiar with most functools modules when I made this. I'm sure there's a
-better way to automate spawning of new Gaussian fits with partial() or decorators
+better way to automate spawning of new Gaussian fits with partial() or decorators.
 
 Requires a number of research-generated files to work: 
 - pilscygx-sma-ds9.reg (region file that describes circles around sources as seen by SMA) or
 	pilscygx-ellps-ds9.reg (describes ellipses around sources as seen by Herschel)
-- formerly proprietary science images of PILS-Cygnus objects with the SMA telescope, or
-	appropriately-sized cutouts of Herschel images
+- formerly proprietary science images of PILS-Cygnus objects with the SMA telescope, now
+	available at http://cdsarc.u-strasbg.fr/ftp/J/A+A/657/A70/fits/ . Alternatively, use
+ 	appropriately-sized (few x 100" on a side) cutouts of Herschel PACS or SPIRE images
 This code has been tested both on SMA data and cutouts of Herschel data, with changes to the
 initial specs of the Gaussians for the latter.
 '''
